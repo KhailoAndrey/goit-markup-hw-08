@@ -116,29 +116,30 @@ a:focus {
 .header > .container {
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
 }
 
 .navigation {
-  margin-left: 215px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .pages {
-  margin-left: 50px;
+  margin-left: 93px;
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
 }
 
 .page,
 .contact {
-  padding: 0 15px;
+  margin-left: 50px;
+}
+
+.page:first-child,
+.contact:first-child {
+  margin-left: 0;
 }
 
 .nav-link {
@@ -149,7 +150,6 @@ a:focus {
 }
 
 .contacts {
-  margin-right: 215px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -157,6 +157,7 @@ a:focus {
 }
 
 .logo {
+  margin: 25px 0;
   color: var(--blue-text);
   font-family: "Raleway";
   font-size: var(--logo-size);
