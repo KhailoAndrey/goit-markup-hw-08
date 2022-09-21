@@ -13,6 +13,8 @@
   --bgc-footer: #2f303a;
   --txt-logo: #000;
   --button-hover-color: #188ce8;
+  --header-border: #ececec;
+  --card-border: #eeeeee;
 }
 
 html {
@@ -102,15 +104,12 @@ a:focus {
   color: var(--blue-text);
 }
 
-.active-page {
-  color: var(--blue-text);
-}
-
 .header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-size: var(--small-text);
+  border-bottom: 1px solid var(--header-border);
 }
 
 .header > .container {
@@ -143,6 +142,18 @@ a:focus {
 }
 
 .nav-link {
+  color: var(--title-color);
+}
+
+.contact-link {
+  color: var(--main-text-color);
+}
+
+.active-page {
+  color: var(--blue-text);
+}
+
+.contact {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -282,25 +293,6 @@ h2 {
   color: var(--main-text-color);
 }
 
-/* .features h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: var(--small-text);
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-} */
-
-/* .features p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--small-text);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-} */
-
 .practices-title {
   text-align: center;
   margin-bottom: 50px;
@@ -350,30 +342,28 @@ h2 {
   color: var(--main-text-color);
 }
 
-/* .our-command li {
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-} */
+.filters {
+  display: flex;
+  margin: 0 auto 34px;
+  justify-content: center;
+}
 
-/* .our-command h3 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--middle-text);
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-} */
+.filter {
+  padding-right: 8px;
+}
+.filter:last-child {
+  padding-right: 0;
+}
 
-/* .our-command p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--middle-text);
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-} */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.description {
+  border: 1px solid var(--card-border);
+}
 
 .cards h3 {
   font-weight: 700;
@@ -381,6 +371,9 @@ h2 {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
 }
 
 .cards p {
@@ -388,6 +381,8 @@ h2 {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .footer {
