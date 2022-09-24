@@ -300,7 +300,7 @@ h2 {
 
 .practices-item {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .our-command {
@@ -312,7 +312,7 @@ h2 {
 }
 .command-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .command-per-prof {
