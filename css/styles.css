@@ -370,7 +370,8 @@ h2 {
   background-color: var(--background-commands);
 }
 
-.command-title {
+.command-title,
+.clients-title {
   text-align: center;
 }
 .command-list {
@@ -407,6 +408,13 @@ h2 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.icon-clients {
+  display: flex;
+  gap: 30px;
+  
+
 }
 
 .filters {
