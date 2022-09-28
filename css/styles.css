@@ -129,9 +129,14 @@ a:focus {
   align-items: center;
 }
 
-.page,
-.contact {
+.page {
   margin-left: 50px;
+}
+
+.contact {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
 }
 
 .page:first-child,
@@ -146,7 +151,9 @@ a:focus {
 .icon-mail::before {
   content: "";
   display: block;
-  background-color: red;
+  height: 12px;
+  width: 16px;
+  /* background-color: red; */
   background-image: url(../images/envelope.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -155,11 +162,14 @@ a:focus {
 
 .icon-tel::before {
   content: "";
-  display: block;
-  background-color: green;
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  /* background-color: green; */
   background-image: url(../images/smartphone.svg);
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 10px;
 }
 
 .contact-link {
