@@ -101,6 +101,9 @@ a:focus {
 }
 
 .header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -140,6 +143,25 @@ a:focus {
   color: var(--title-color);
 }
 
+.icon-mail::before {
+  content: "";
+  display: block;
+  background-color: red;
+  background-image: url(../images/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.icon-tel::before {
+  content: "";
+  display: block;
+  background-color: green;
+  background-image: url(../images/smartphone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .contact-link {
   color: var(--main-text-color);
 }
@@ -172,7 +194,10 @@ nav a {
 }
 
 .section-title {
-  background: var(--bgc-footer);
+  background-image: url(../images/Img.jpg);
+  background-size: 1600px 600px;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
