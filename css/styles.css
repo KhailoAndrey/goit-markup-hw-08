@@ -204,7 +204,11 @@ nav a {
 }
 
 .section-title {
-  background-image: url(../images/Img.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img.jpg);
   background-size: 1600px 600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -413,8 +417,12 @@ h2 {
 .icon-clients {
   display: flex;
   gap: 30px;
-  
+}
 
+.clients-link {
+  background-color: var(--white-color);
+  border: 1px solid var(--txt-logo);
+  border-radius: 4px;
 }
 
 .filters {
