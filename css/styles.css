@@ -15,6 +15,7 @@
   --button-hover-color: #188ce8;
   --header-border: #ececec;
   --card-border: #eeeeee;
+  --icon: #afb1b8;
 }
 
 html {
@@ -153,8 +154,7 @@ a:focus {
   display: block;
   height: 12px;
   width: 16px;
-  /* background-color: red; */
-  background-image: url(../images/envelope.svg);
+  background-image: url("../images/envelope.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
@@ -300,31 +300,18 @@ h2 {
   margin-right: 30px;
 }
 
-.features-items::before {
-  display: block;
-  content: "";
+.icons-features {
   height: 120px;
   border-radius: 4px;
+  margin-bottom: 30px;
   background-color: var(--background-commands);
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
+.icons {
+  align-items: center;
 }
 
 .features-items:last-child {
@@ -412,6 +399,28 @@ h2 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  margin: 0 32px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-item-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .icon-clients {
