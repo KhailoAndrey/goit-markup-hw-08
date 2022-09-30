@@ -92,8 +92,9 @@ body {
 }
 
 a {
-  color: currentColor;
+  /* color: currentColor; */
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover,
@@ -147,32 +148,34 @@ a:focus {
 
 .nav-link {
   color: var(--title-color);
-}
-
-.icon-mail::before {
-  content: "";
   display: block;
-  height: 12px;
-  width: 16px;
-  background-image: url("../images/envelope.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.icon-tel {
+  fill: currentColor;
   margin-right: 10px;
 }
 
-.icon-tel::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  /* background-color: green; */
-  background-image: url(../images/smartphone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
+.contact-link .icon-mail:hover,
+.contact-link .icon-mail:focus,
+.contact-link .icon-tel:hover,
+.contact-link .icon-tel:focus {
+  color: var(--blue-text);
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
 }
 
@@ -183,6 +186,7 @@ a:focus {
 .contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .logo {
@@ -421,17 +425,49 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: var(--icon);
+}
+
+.social-item-link:hover,
+.social-item-link:focus {
+  color: var(--white-color);
+  background-color: var(--blue-text);
+}
+
+.icon {
+  fill: currentColor;
 }
 
 .icon-clients {
   display: flex;
   gap: 30px;
+  justify-content: center;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-logo {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  background-color: var(--white-color);
+  border: 1px solid var(--icon);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon);
 }
 
 .clients-link {
-  background-color: var(--white-color);
-  border: 1px solid var(--txt-logo);
-  border-radius: 4px;
+  fill: currentColor;
+}
+
+.clients-logo:hover,
+.clients-logo:hover {
+  border-color: var(--blue-text);
 }
 
 .filters {
@@ -485,6 +521,14 @@ h2 {
   padding-bottom: 60px;
 }
 
+.footer-block {
+  display: flex;
+}
+
+.footer-logo-links {
+  display: block;
+}
+
 .footer span {
   color: var(--white-color);
 }
@@ -514,4 +558,32 @@ h2 {
 .footer [href^="mail"],
 .footer [href^="tel"] {
   opacity: 0.6;
+}
+
+.footer-social-tittle {
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: block;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-social-list .social-list {
+  margin: 0;
+}
+
+.footer-social-list .social-item {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: var(--white-color);
+}
+
+.footer-social-tittle {
+  text-transform: uppercase;
+  color: var(--white-color);
 }
