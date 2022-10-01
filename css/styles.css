@@ -283,6 +283,8 @@ button:hover,
 button:focus {
   background-color: var(--blue-text);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 h2 {
@@ -466,7 +468,7 @@ h2 {
 }
 
 .clients-logo:hover,
-.clients-logo:hover {
+.clients-logo:focus {
   border-color: var(--blue-text);
 }
 
@@ -491,6 +493,12 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .description {
