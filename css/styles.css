@@ -510,7 +510,7 @@ h2 {
 
 .cards h3 {
   font-weight: 700;
-  font-size: var(--middle-text);
+  font-size: var(--large-text);
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
@@ -571,6 +571,11 @@ h2 {
 
 .footer-social-tittle {
   margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
 }
 
 .footer-social-list {
@@ -590,9 +595,4 @@ h2 {
 
 .footer-icon {
   fill: var(--white-color);
-}
-
-.footer-social-tittle {
-  text-transform: uppercase;
-  color: var(--white-color);
 }
