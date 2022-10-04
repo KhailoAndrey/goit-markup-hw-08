@@ -92,7 +92,6 @@ body {
 }
 
 a {
-  /* color: currentColor; */
   text-decoration: none;
   cursor: pointer;
 }
@@ -133,6 +132,7 @@ a:focus {
 
 .page {
   margin-left: 50px;
+  position: relative;
 }
 
 .contact {
@@ -181,6 +181,18 @@ a:focus {
 
 .active-page {
   color: var(--blue-text);
+  position: relative;
+}
+
+.active-page::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-text);
+  bottom: -1.5px;
+  border-radius: 2px;
 }
 
 .contacts {
@@ -201,10 +213,6 @@ a:focus {
 
 .header span {
   color: var(--txt-logo);
-}
-
-nav a {
-  color: var(--title-color);
 }
 
 .section-title {
@@ -363,6 +371,27 @@ h2 {
   gap: 30px;
 }
 
+.practices-box {
+  position: relative;
+}
+
+.practices-text {
+  padding: 27px;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: var(--small-text);
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--bgc-footer);
+  opacity: 0.8;
+}
+
 .our-command {
   background-color: var(--background-commands);
 }
@@ -515,20 +544,25 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translatex(-100%);
+  background: var(--blue-text);
+  opacity: 0.9;
+  transform: translateY(200%);
   transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay > p {
+.card:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay-text {
+  color: var(--white-color);
+  font-weight: 400;
   padding: 63px 24px;
   margin: 0;
-  color: var(--white-color);
   font-size: var(--large-text);
-}
-
-.box-overlay:hover .overlay {
-  transform: translateX(0);
+  line-height: 1.56;
+  letter-spacing: 00.03em;
 }
 
 .description {
@@ -537,7 +571,7 @@ h2 {
   border-top: 0px;
 }
 
-.cards h3 {
+.card-tittle {
   font-weight: 700;
   font-size: var(--large-text);
   line-height: 2;
@@ -546,7 +580,7 @@ h2 {
   margin-bottom: 4px;
 }
 
-.cards p {
+.card-text {
   font-size: var(--middle-text);
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -561,6 +595,7 @@ h2 {
 
 .footer-block {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-links {
