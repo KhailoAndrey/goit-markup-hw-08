@@ -502,6 +502,35 @@ h2 {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.box-overlay {
+  width: 370;
+  height: 294;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translatex(-100%);
+  transition: transform 250ms ease;
+}
+
+.overlay > p {
+  padding: 63px 24px;
+  margin: 0;
+  color: var(--white-color);
+  font-size: var(--large-text);
+}
+
+.box-overlay:hover .overlay {
+  transform: translateX(0);
+}
+
 .description {
   border: 1px solid var(--card-border);
   padding: 20px 24px;
