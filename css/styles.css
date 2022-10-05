@@ -16,7 +16,7 @@
   --header-border: #ececec;
   --card-border: #eeeeee;
   --icon: #afb1b8;
-  --transition-duration: 2000ms;
+  --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
