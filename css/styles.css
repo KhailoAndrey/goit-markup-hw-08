@@ -287,7 +287,6 @@ h1 {
   visibility: hidden;
   opacity: 100;
   pointer-events: none;
-  transition: visibility var(--transition-duration) var(--timing-function);
 }
 
 .close-button {
