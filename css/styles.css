@@ -733,7 +733,6 @@ h2 {
 .footer-social-list {
   display: block;
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .footer-social-list .social-list {
@@ -747,4 +746,77 @@ h2 {
 
 .footer-icon {
   fill: var(--white-color);
+}
+
+.footer-subscription {
+  display: block;
+  width: 570px;
+  margin-left: auto;
+}
+
+.footer-subscription-tittle {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.input-email {
+  /* display: inline-block;
+  align-items: center; */
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--bgc-footer);
+  transition: border var(--transition-duration) var(--timing-function);
+}
+
+.input-email:hover,
+.input-email:focus-visible {
+  border: 1px solid var(--blue-text);
+}
+
+.send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-left: auto;
+  color: var(--white-color);
+  background-color: var(--blue-text);
+  transition: background-color var(--transition-duration) var(--timing-function);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: var(--button-hover-color);
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: var(--middle-text);
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.icon-send {
+  fill: currentColor;
+  margin-left: 10px;
 }
