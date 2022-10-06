@@ -320,7 +320,7 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 582px;
   background-color: var(--white-color);
@@ -329,6 +329,10 @@ h1 {
   border-radius: 4px;
   transition: transform var(--transition-duration) var(--timing-function),
     opacity var(--transition-duration) var(--timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 button {
