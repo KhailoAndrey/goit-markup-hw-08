@@ -895,6 +895,7 @@ h2 {
 
 .license-link {
   color: var(--blue-text);
+  text-decoration: underline;
 }
 
 .license {
@@ -902,6 +903,39 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  position: relative;
+}
+/*  временно закоментировано */
+/* .icon-license-checkbox {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  border: 2px solid var(--title-color);
+  fill: var(--white-color);
+  background-color: var(--white-color);
+  transition: fill var(--transition-duration) var(--timing-function),
+    border-color var(--transition-duration) var(--timing-function),
+    background-color var(--transition-duration) var(--timing-function);
+}
+
+.icon-license-checkbox:hover,
+.icon-license-checkbox:focus {
+  fill: var(--white-color);
+  border-color: var(--blue-text);
+  background-color: var(--blue-text);
+} */
+
+.icon-license-checkbox {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  border: 1px solid var(--blue-text);
+  fill: var(--white-color);
+  background-color: var(--blue-text);
+}
+
+.license-checkbox {
+  visibility: hidden;
 }
 
 .license p {
