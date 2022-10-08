@@ -897,7 +897,7 @@ h2 {
 .license {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 10px;
   position: relative;
 }
