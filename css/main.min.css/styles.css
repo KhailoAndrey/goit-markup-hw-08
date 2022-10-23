@@ -386,16 +386,16 @@ h2 {
   color: var(--title-color);
 }
 
-.features {
+.section__list {
   display: flex;
   justify-content: space-between;
 }
 
-.features-items {
+.section__items {
   margin-right: 30px;
 }
 
-.icons-features {
+.section__item {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -405,19 +405,19 @@ h2 {
   align-items: center;
 }
 
-.icons {
+.section__icon {
   align-items: center;
 }
 
-.features-items:last-child {
+.section__items:last-child {
   margin-right: 0;
 }
 
-.features-text {
+.section__text {
   margin-top: 10px;
 }
 
-.features-title {
+.section__title {
   font-style: normal;
   font-weight: 700;
   font-size: var(--small-text);
@@ -428,7 +428,7 @@ h2 {
   margin-top: 30px;
 }
 
-.features-text {
+.section__text {
   margin-top: 10px;
   font-style: normal;
   font-weight: 400;
@@ -442,21 +442,21 @@ h2 {
   padding-top: 0;
 }
 
-.practices-title {
+.practices__title {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.practices-item {
+.practices__list {
   display: flex;
   gap: 30px;
 }
 
-.practices-box {
+.practices__item {
   position: relative;
 }
 
-.practices-text {
+.practices__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -478,27 +478,27 @@ h2 {
   background-color: var(--background-commands);
 }
 
-.command-title,
+.our-command__title,
 .clients-title {
   text-align: center;
 }
-.command-list {
+.our-command__list {
   display: flex;
   gap: 30px;
 }
 
-.command-per-prof {
+.our-command__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.command-item {
+.our-command__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command-person {
+.our-command__person {
   text-align: center;
   font-style: normal;
   font-weight: 500;
@@ -508,7 +508,7 @@ h2 {
   color: var(--title-color);
   margin-bottom: 10px;
 }
-.command-profession {
+.our-command__profession {
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -526,12 +526,12 @@ h2 {
   justify-content: center;
 }
 
-.social-item {
+.social-list__item {
   width: 44px;
   height: 44px;
 }
 
-.social-item-link {
+.social-list__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -544,13 +544,13 @@ h2 {
     background-color var(--transition-duration) var(--timing-function);
 }
 
-.social-item-link:hover,
-.social-item-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   color: var(--white-color);
   background-color: var(--blue-text);
 }
 
-.icon {
+.social-list__icon {
   fill: currentColor;
 }
 
