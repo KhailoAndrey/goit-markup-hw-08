@@ -1,3 +1,4 @@
+/* variables */
 :root {
   --title-color: #212121;
   --main-text-color: #757575;
@@ -21,6 +22,8 @@
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* reset block start --> */
 
 html {
   box-sizing: border-box;
@@ -82,6 +85,9 @@ body {
   margin: -1px;
 }
 
+/* <-- reset block end */
+
+/* common styles >> */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -106,6 +112,7 @@ a:hover,
 a:focus {
   color: var(--blue-text);
 }
+/* << common styles */
 
 .site-header {
   max-width: 1600px;
@@ -208,7 +215,6 @@ a:focus {
   position: absolute;
   bottom: -1.5px;
 }
-
 
 .site-logo {
   margin: 25px 0;
@@ -479,7 +485,7 @@ h2 {
 }
 
 .our-command__title,
-.clients-title {
+.clients__title {
   text-align: center;
 }
 .our-command__list {
@@ -554,18 +560,18 @@ h2 {
   fill: currentColor;
 }
 
-.icon-clients {
+.clients__list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.client-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-logo {
+.clients__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -580,14 +586,16 @@ h2 {
     border-color var(--transition-duration) var(--timing-function);
 }
 
-.clients-link {
+.clients__icon {
   fill: currentColor;
 }
 
-.clients-logo:hover,
-.clients-logo:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--blue-text);
 }
+
+/* Portfolio start --> */
 
 .filters {
   display: flex;
@@ -681,30 +689,33 @@ h2 {
   color: var(--main-text-color);
 }
 
+/* <-- Portfolio end */
+
+/* footer block >>*/
 .footer {
   background: var(--bgc-footer);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-block {
+.footer__block {
   display: flex;
   align-items: baseline;
 }
 
-.footer-logo-links {
+.footer__contacts {
   display: block;
 }
 
-.footer span {
+.site-logo--inverse {
   color: var(--white-color);
 }
 
-.address {
+.footer__address {
   margin-top: 20px;
 }
 
-.address a {
+.footer__link {
   font-style: normal;
   font-weight: 400;
   font-size: var(--small-text);
@@ -713,12 +724,12 @@ h2 {
   color: var(--white-color);
 }
 
-.footer-link:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-link:hover a,
-.footer-link:focus a {
+.footer__link:hover,
+.footer__link:focus {
   color: var(--blue-text);
 }
 
@@ -727,7 +738,7 @@ h2 {
   opacity: 0.6;
 }
 
-.footer-social-tittle {
+.footer__social-tittle {
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--white-color);
@@ -736,31 +747,32 @@ h2 {
   line-height: 1.14;
 }
 
-.footer-social-list {
+.footer__social-block {
   display: block;
   margin-left: 70px;
 }
 
-.footer-social-list .social-list {
+.footer__social-list {
+  display: flex;
   margin: 0;
 }
 
-.footer-social-list .social-item {
+.footer__social-item {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon {
+.footer__icon {
   fill: var(--white-color);
 }
 
-.footer-subscription {
+.footer__subscription {
   display: block;
   width: 570px;
   margin-left: auto;
 }
 
-.footer-subscription-tittle {
+.footer__subscription-tittle {
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--white-color);
@@ -769,13 +781,13 @@ h2 {
   line-height: 1.14;
 }
 
-.subscription-form {
+.footer__subscription-form {
   display: flex;
   justify-content: space-between;
   gap: 12px;
 }
 
-.input-email {
+.footer__input-email {
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -787,12 +799,13 @@ h2 {
   transition: border var(--transition-duration) var(--timing-function);
 }
 
-.input-email:hover,
-.input-email:focus-visible {
+.footer__input-email:hover,
+.footer__input-email:focus {
   border: 1px solid var(--blue-text);
+  outline: none;
 }
 
-.send-btn {
+.footer__send-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -809,15 +822,16 @@ h2 {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-.send-btn:hover,
-.send-btn:focus {
+.footer__send-btn:hover,
+.footer__send-btn:focus {
   background-color: var(--button-hover-color);
 }
 
-.icon-send {
+.footer__icon-send {
   fill: currentColor;
   margin-left: 10px;
 }
+/*<< footer block*/
 
 .modal-tittle {
   font-weight: 700;
@@ -844,6 +858,7 @@ h2 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--transition-duration) var(--timing-function);
+  outline: none;
 }
 
 .feedback-area {
@@ -854,6 +869,7 @@ h2 {
   border-radius: 4px;
   resize: none;
   transition: border var(--transition-duration) var(--timing-function);
+  outline: none;
 }
 
 .feedback-area:hover,
@@ -935,7 +951,7 @@ h2 {
 
 .license-checkbox:checked + .icon-license-checkbox {
   background-color: var(--blue-text);
-border-color: var(--blue-text);
+  border-color: var(--blue-text);
 }
 
 .license-checkbox {
