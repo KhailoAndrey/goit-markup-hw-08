@@ -1,16 +1,16 @@
-.section__filters {
-  display: flex;
-  margin: 0 auto 50px;
-  justify-content: center;
-}
-
-.section__filter-button {
-  padding: 6px 22px;
-}
-
-.section__filter {
-  margin-right: 8px;
-}
-.section__filter:last-child {
-  margin-right: 0;
+.section {
+  &__filters {
+    display: flex;
+    margin: 0 auto 50px;
+    justify-content: center;
+  }
+  &__filter-button {
+    padding: 6px 22px;
+  }
+  &__filter {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

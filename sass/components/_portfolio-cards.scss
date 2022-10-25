@@ -3,72 +3,66 @@
   flex-wrap: wrap;
   gap: 30px;
   position: relative;
-}
-
-.cards__link {
-  box-shadow: none;
-  transition: box-shadow $transition-duration $timing-function;
-}
-
-.cards__link:hover,
-.cards__link:focus {
-  display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.cards__box-overlay {
-  width: 370;
-  height: 294;
-  position: relative;
-  overflow: hidden;
-}
-
-.cards__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $blue-text;
-  opacity: 0.9;
-  transform: translateY(101%);
-  transition: transform $transition-duration ease;
-  transition-timing-function: $timing-function;
-}
-
-.cards__link:hover .cards__overlay {
-  transform: translateY(0);
-}
-
-.cards__overlay-text {
-  color: $white-color;
-  font-weight: 400;
-  padding: 63px 24px;
-  margin: 0;
-  font-size: $large-text;
-  line-height: 1.56;
-  letter-spacing: 00.03em;
-}
-
-.cards__description {
-  border: 1px solid $card-border;
-  padding: 20px 24px;
-  border-top: 0px;
-}
-
-.cards__tittle {
-  font-weight: 700;
-  font-size: $large-text;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $title-color;
-  margin-bottom: 4px;
-}
-
-.cards__text {
-  font-size: $middle-text;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: $main-text-color;
+  &__link {
+    box-shadow: none;
+    transition: box-shadow $transition-duration $timing-function;
+    &:hover,
+    &:focus {
+      display: block;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      // .cards__overlay {
+      //   transform: translateY(0);
+      // }
+    }
+  }
+  &__box-overlay {
+    width: 370;
+    height: 294;
+    position: relative;
+    overflow: hidden;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $blue-text;
+    opacity: 0.9;
+    transform: translateY(101%);
+    transition: transform $transition-duration ease;
+    transition-timing-function: $timing-function;
+    .cards__link:hover & {
+      transform: translateY(0);
+    }
+  }
+  &__overlay-text {
+    color: $white-color;
+    font-weight: 400;
+    padding: 63px 24px;
+    margin: 0;
+    font-size: $large-text;
+    line-height: 1.56;
+    letter-spacing: 00.03em;
+  }
+  &__description {
+    border: 1px solid $card-border;
+    padding: 20px 24px;
+    border-top: 0px;
+  }
+  &__tittle {
+    font-weight: 700;
+    font-size: $large-text;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-color;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-size: $middle-text;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
 }

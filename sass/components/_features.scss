@@ -1,0 +1,52 @@
+h2 {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $h2-text;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
+.features {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item {
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: $background-commands;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    align-items: center;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: $small-text;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-color;
+    margin-top: 30px;
+  }
+  &__text {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $small-text;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+}

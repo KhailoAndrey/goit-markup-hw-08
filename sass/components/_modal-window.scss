@@ -31,13 +31,12 @@
   border-radius: 50%;
   background-color: $white-color;
   transition: fill $transition-duration $timing-function;
-}
-
-.modal__close-btn:hover,
-.modal__close-btn:focus {
-  fill: $blue-text;
-  background-color: $white-color;
-  box-shadow: none;
+  &:hover,
+  &:focus {
+    fill: $blue-text;
+    background-color: $white-color;
+    box-shadow: none;
+  }
 }
 
 .modal {
@@ -85,6 +84,10 @@
   border-radius: 4px;
   transition: border-color $transition-duration $timing-function;
   outline: none;
+  &:hover,
+  &:focus {
+    border-color: $blue-text;
+  }
 }
 
 .modal__feedback {
@@ -96,11 +99,10 @@
   resize: none;
   transition: border $transition-duration $timing-function;
   outline: none;
-}
-
-.modal__feedback:hover,
-.modal__feedback:focus {
-  border: 1px solid $blue-text;
+  &:hover,
+  &:focus {
+    border: 1px solid $blue-text;
+  }
 }
 
 .modal__label {
@@ -125,11 +127,6 @@
 .modal__input:hover + .modal__icon,
 .modal__input:focus + .modal__icon {
   fill: $blue-text;
-}
-
-.modal__input:hover,
-.modal__input:focus {
-  border-color: $blue-text;
 }
 
 .modal__link {

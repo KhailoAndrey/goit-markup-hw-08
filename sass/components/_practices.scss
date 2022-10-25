@@ -1,35 +1,31 @@
 .practices {
   padding-top: 0;
-}
-
-.practices__title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.practices__list {
-  display: flex;
-  gap: 30px;
-}
-
-.practices__item {
-  position: relative;
-}
-
-.practices__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
-  font-weight: 700;
-  font-size: $small-text;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white-color;
-  background-color: $bgc-footer;
-  opacity: 0.8;
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: $small-text;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $bgc-footer;
+    opacity: 0.8;
+  }
 }
