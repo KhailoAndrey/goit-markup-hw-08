@@ -13,10 +13,6 @@
   height: auto;
 }
 
-.container {
-  box-sizing: 360px;
-}
-
 .section-title__text {
   font-style: normal;
   font-weight: 900;
@@ -47,5 +43,14 @@
   &:hover,
   &:focus {
     background-color: $button-hover-color;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section-title {
+    width: 480px;
+  }
+  .container {
+    width: 360px;
   }
 }
