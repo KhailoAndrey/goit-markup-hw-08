@@ -8,65 +8,40 @@
   @include desktop {
     padding-top: 0;
   }
-
-  .practices__title {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
-    @include desktop {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+}
+.practices__title {
+  @include desktop {
+    text-align: center;
+    margin-bottom: 50px;
   }
-  .practices__list {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
-    @include desktop {
-      display: flex;
-      gap: 30px;
-    }
+}
+.practices__list {
+  @include desktop {
+    display: flex;
+    gap: 30px;
   }
-  .practices__item {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
-    @include desktop {
-      position: relative;
-    }
+}
+.practices__item {
+  @include desktop {
+    position: relative;
   }
-  .practices__text {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
-    @include desktop {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      width: 370px;
-      height: 70px;
-      font-weight: 700;
-      font-size: $small-text;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $white-color;
-      background-color: $bgc-footer;
-      opacity: 0.8;
-    }
+}
+.practices__text {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: $small-text;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $bgc-footer;
+    opacity: 0.8;
   }
 }
