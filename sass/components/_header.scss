@@ -2,10 +2,10 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 700;
-  line-height: 1.16;
+  // font-weight: 700;
+  // line-height: 1.16;
+  // font-size: $text-24;
   letter-spacing: 0.02em;
-  font-size: $text-24;
   border-bottom: 1px solid $header-border;
   &__container {
     display: flex;
@@ -67,6 +67,10 @@
   }
   &__text {
     color: $txt-logo;
+    font-size: $text-24;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
   }
   &__icon-mail {
     fill: currentColor;
@@ -98,11 +102,18 @@
     bottom: -1.5px;
   }
   &__menu {
+    display: flex;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     background: transparent;
     margin-left: auto;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
   }
 }
 
