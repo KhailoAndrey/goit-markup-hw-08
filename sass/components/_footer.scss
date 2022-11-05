@@ -5,14 +5,19 @@
   margin-right: auto;
   padding: 60px 15px;
   &__block {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
     // align-items: baseline;
+    text-align: center;
   }
   &__contacts {
     display: block;
   }
   &__address {
     margin-top: 20px;
+    font-weight: 400;
+    font-size: $small-text;
+    line-height: 1.7;
   }
   &__item:not(:last-child) {
     margin-bottom: 9px;
@@ -23,10 +28,12 @@
     color: $white-color;
     font-style: normal;
     font-weight: 700;
+    font-size: $small-text;
     line-height: 1.14;
   }
   &__social-block {
     display: block;
+    margin: 60px 0;
     // margin-left: 70px;
   }
   &__social-list {
@@ -40,25 +47,30 @@
   &__icon {
     fill: $white-color;
   }
-  &__subscription {
-    // display: block;
-    width: 570px;
-    margin-left: auto;
-  }
+  // &__subscription {
+  // display: block;
+  // width: 570px;
+  // margin-left: auto;
+  // }
   &__subscription-tittle {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     text-transform: uppercase;
     color: $white-color;
     font-style: normal;
     font-weight: 700;
+    font-size: $small-text;
     line-height: 1.14;
   }
   &__subscription-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     // justify-content: space-between;
     // gap: 12px;
   }
+  // &__subscription-form {
+  //   width: 100%;
+  // }
   &__icon-send {
     fill: currentColor;
     margin-left: 10px;
@@ -88,8 +100,9 @@
 }
 
 .footer__input-email {
+  margin: 20px 0;
   padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
