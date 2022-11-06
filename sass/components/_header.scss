@@ -12,37 +12,63 @@
     align-items: center;
     // justify-content: space-between;
     padding: 0 15px;
+    @include tablet {
+      justify-content: space-between;
+    }
   }
   &__navigation {
     // display: flex;
     // justify-content: space-evenly;
     align-items: baseline;
+    @include tablet {
+      display: flex;
+      padding: 0 15px;
+    }
   }
   &__pages {
     display: none;
     @include tablet {
-      margin-left: 93px;
+      margin-left: 90px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      gap: 50px;
+      // justify-content: space-between;
+      // align-items: center;
+      font-weight: 500;
+      font-size: $small-text;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $title-color;
     }
   }
   &__page {
     margin-left: 50px;
     position: relative;
+    @include tablet {
+      margin: 0;
+    }
   }
   &__contacts {
     display: none;
     @include tablet {
       display: flex;
-      margin-left: auto;
-      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      // margin-left: auto;
+      // align-items: center;
+      font-weight: 500;
+      font-size: $form-text;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+      color: $main-text-color;
     }
   }
   &__contact {
     display: flex;
     margin-left: 30px;
     align-items: center;
+    @include tablet {
+      margin: 0;
+    }
   }
   &__page:first-child,
   &__contact:first-child {
@@ -55,6 +81,9 @@
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
+    @include tablet {
+      margin: 0;
+    }
   }
   &__contact-link {
     display: flex;
@@ -77,6 +106,10 @@
     margin-right: 10px;
     margin-bottom: 0;
     transition: color $transition-duration $timing-function;
+    @include tablet {
+      width: 14px;
+      height: 10px;
+    }
     .site-header__contact-link &:hover,
     .site-header__contact-link &:focus {
       color: $blue-text;
@@ -86,6 +119,10 @@
     fill: currentColor;
     margin-right: 10px;
     transition: color $transition-duration $timing-function;
+    @include tablet {
+      width: 10px;
+      height: 14px;
+    }
     .site-header__contact-link &:hover,
     .site-header__contact-link &:focus {
       color: $blue-text;
@@ -122,7 +159,6 @@
     }
   }
 }
-
 .site-logo {
   // margin: 25px 0;
   color: $blue-text;
@@ -131,4 +167,7 @@
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  // @include tablet {
+  //   display: flex;
+  // }
 }
