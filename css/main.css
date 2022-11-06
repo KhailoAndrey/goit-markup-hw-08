@@ -124,6 +124,13 @@ button:hover, button:focus {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-header__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+  }
+}
 .site-header__navigation {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -135,6 +142,11 @@ button:hover, button:focus {
     display: -ms-flexbox;
     display: flex;
     padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-header__navigation {
+    padding: 0;
   }
 }
 .site-header__pages {
@@ -181,6 +193,17 @@ button:hover, button:focus {
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-header__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 14px;
+    line-height: 1.14;
+    gap: 30px;
   }
 }
 .site-header__contact {
@@ -246,6 +269,12 @@ button:hover, button:focus {
     height: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-header__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
 .site-header__contact-link .site-header__icon-mail:hover, .site-header__contact-link .site-header__icon-mail:focus {
   color: #2196f3;
 }
@@ -259,6 +288,12 @@ button:hover, button:focus {
   .site-header__icon-tel {
     width: 10px;
     height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-header__icon-tel {
+    width: 10px;
+    height: 16px;
   }
 }
 .site-header__contact-link .site-header__icon-tel:hover, .site-header__contact-link .site-header__icon-tel:focus {
@@ -743,6 +778,103 @@ button:hover, button:focus {
   fill: currentColor;
 }
 
+.section__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section__filter-button {
+  padding: 6px 22px;
+}
+.section__filter {
+  margin-right: 8px;
+}
+.section__filter:last-child {
+  margin-right: 0;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+.cards__link {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cards__link:hover, .cards__link:focus {
+  display: block;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.cards__box-overlay {
+  width: 370;
+  height: 294;
+  position: relative;
+  overflow: hidden;
+}
+.cards__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  opacity: 0.9;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cards__link:hover .cards__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.cards__overlay-text {
+  color: #fff;
+  font-weight: 400;
+  padding: 63px 24px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
+.cards__description {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border-top: 0px;
+}
+.cards__tittle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+.cards__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .footer {
   background: #2f303a;
   width: 480px;
@@ -805,6 +937,7 @@ button:hover, button:focus {
 @media screen and (min-width: 768px) {
   .footer__social-block {
     margin: 0;
+    margin-top: 8px;
   }
 }
 .footer__social-list {

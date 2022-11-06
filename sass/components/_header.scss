@@ -15,6 +15,11 @@
     @include tablet {
       justify-content: space-between;
     }
+    @include desktop {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0;
+    }
   }
   &__navigation {
     // display: flex;
@@ -23,6 +28,9 @@
     @include tablet {
       display: flex;
       padding: 0 15px;
+    }
+    @include desktop {
+      padding: 0;
     }
   }
   &__pages {
@@ -60,6 +68,12 @@
       line-height: 1.16;
       letter-spacing: 0.02em;
       color: $main-text-color;
+    }
+    @include desktop {
+      flex-direction: row;
+      font-size: $small-text;
+      line-height: 1.14;
+      gap: 30px;
     }
   }
   &__contact {
@@ -110,6 +124,10 @@
       width: 14px;
       height: 10px;
     }
+    @include desktop {
+      width: 16px;
+      height: 12px;
+    }
     .site-header__contact-link &:hover,
     .site-header__contact-link &:focus {
       color: $blue-text;
@@ -122,6 +140,10 @@
     @include tablet {
       width: 10px;
       height: 14px;
+    }
+    @include desktop {
+      width: 10px;
+      height: 16px;
     }
     .site-header__contact-link &:hover,
     .site-header__contact-link &:focus {
