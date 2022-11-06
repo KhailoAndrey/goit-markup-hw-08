@@ -4,11 +4,25 @@
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
+  @include tablet {
+    width: 768px;
+    padding: 60px 90px;
+  }
   &__block {
     display: flex;
     flex-direction: column;
     // align-items: baseline;
     text-align: center;
+    @include tablet {
+      // display: flex;
+    }
+  }
+  &__top {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
   }
   &__contacts {
     display: block;
@@ -21,6 +35,7 @@
   }
   &__item:not(:last-child) {
     margin-bottom: 9px;
+    
   }
   &__social-tittle {
     margin-bottom: 20px;
@@ -35,6 +50,9 @@
     display: block;
     margin: 60px 0;
     // margin-left: 70px;
+    @include tablet {
+      margin: 0;
+    }
   }
   &__social-list {
     display: flex;
@@ -48,9 +66,9 @@
     fill: $white-color;
   }
   // &__subscription {
-  // display: block;
-  // width: 570px;
-  // margin-left: auto;
+  //   width: 570px;
+  //   display: block;
+  //   margin-left: auto;
   // }
   &__subscription-tittle {
     // margin-bottom: 20px;
