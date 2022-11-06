@@ -128,7 +128,7 @@ button:hover, button:focus {
   .site-header__container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 .site-header__navigation {
@@ -454,6 +454,11 @@ button:hover, button:focus {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .features {
+    width: 1200px;
+  }
+}
 .features__list {
   padding: 60px 15px;
   text-align: center;
@@ -469,6 +474,13 @@ button:hover, button:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 30px;
   }
 }
 .features__items:not(:last-child) {

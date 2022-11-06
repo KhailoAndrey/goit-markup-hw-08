@@ -14,6 +14,9 @@
   @include tablet {
     width: 768px;
   }
+  @include desktop {
+    width: 1200px;
+  }
 
   &__list {
     padding: 60px 15px;
@@ -24,6 +27,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
+      gap: 30px;
     }
   }
   &__items:not(:last-child) {
