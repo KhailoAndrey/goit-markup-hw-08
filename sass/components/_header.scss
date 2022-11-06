@@ -108,6 +108,12 @@
     padding-bottom: 10px;
     background: transparent;
     margin-left: auto;
+    &:hover,
+    &:focus {
+      fill: $blue-text;
+      background-color: $white-color;
+      box-shadow: none;
+    }
     @include tablet {
       display: none;
     }

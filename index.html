@@ -52,15 +52,15 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
-      <button type="button" class="site-header__menu">
+      <button type="button" class="site-header__menu" data-menu-open>
         <svg width="40px" height="40px">
           <use href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
     <!-- Mobile menu -->
-    <div class="mob-menu">
-      <button type="button" class="menu-close-btn">
+    <div class="mob-menu is-hidden" data-menu>
+      <button type="button" class="menu-close-btn" data-menu-close>
         <svg width="40" height="40">
           <use href="./images/symbol-defs.svg#icon-close_menu_btn"></use>
         </svg>
@@ -589,6 +589,8 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

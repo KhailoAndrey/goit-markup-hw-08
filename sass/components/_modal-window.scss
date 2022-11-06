@@ -10,12 +10,6 @@
     visibility $transition-duration $timing-function;
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .modal__close-btn {
   display: flex;
   justify-content: center;
