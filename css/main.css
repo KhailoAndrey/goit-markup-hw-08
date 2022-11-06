@@ -681,6 +681,11 @@ button:hover, button:focus {
   margin-right: auto;
   padding: 60px 15px;
 }
+@media screen and (min-width: 768px) {
+  .clients {
+    width: 768px;
+  }
+}
 .clients__title {
   text-align: center;
   font-weight: 700;
@@ -703,6 +708,12 @@ button:hover, button:focus {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .clients__link {
   display: -webkit-box;

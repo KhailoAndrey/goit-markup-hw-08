@@ -3,6 +3,9 @@
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
+  @include tablet {
+    width: 768px;
+  }
   &__title {
     text-align: center;
     font-weight: 700;
@@ -19,6 +22,9 @@
   &__item {
     flex-basis: calc((100% - 30px) / 2);
     height: 92px;
+    @include tablet {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
   }
   &__link {
     display: flex;
