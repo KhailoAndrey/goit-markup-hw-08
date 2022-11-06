@@ -11,17 +11,28 @@
   width: 480px;
   margin-left: auto;
   margin-right: auto;
+  @include tablet {
+    width: 768px;
+  }
 
   &__list {
     padding: 60px 15px;
     // max-width: 480px;
     text-align: center;
-
-    // display: flex;
-    // justify-content: space-between;
+    @include tablet {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
   &__items:not(:last-child) {
     margin-bottom: 30px;
+  }
+  &__items {
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
   &__item {
@@ -45,6 +56,9 @@
     text-transform: uppercase;
     color: $title-color;
     // margin-top: 30px;
+    @include tablet {
+      text-align: left;
+    }
   }
   &__text {
     margin-top: 10px;
@@ -54,5 +68,8 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $main-text-color;
+    @include tablet {
+      text-align: left;
+    }
   }
 }
