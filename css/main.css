@@ -610,6 +610,11 @@ button:hover, button:focus {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-command {
+    width: 1200px;
+  }
+}
 .our-command__title {
   text-align: center;
   font-weight: 700;
@@ -640,6 +645,12 @@ button:hover, button:focus {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-command__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .our-command__card {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -660,6 +671,11 @@ button:hover, button:focus {
   .our-command__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-command__item {
+    gap: 30px;
   }
 }
 .our-command__person {
@@ -733,6 +749,11 @@ button:hover, button:focus {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    width: 1200px;
+  }
+}
 .clients__title {
   text-align: center;
   font-weight: 700;
@@ -751,6 +772,12 @@ button:hover, button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .clients__item {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
@@ -766,8 +793,6 @@ button:hover, button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: calc(100% - 15px);
-      flex-basis: calc(100% - 15px);
   height: 100%;
   background-color: #fff;
   border: 1px solid #afb1b8;
