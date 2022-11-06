@@ -1,12 +1,20 @@
 .footer {
   background: $bgc-footer;
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
+  @include mobile {
+    width: 480px;
+  }
   @include tablet {
     width: 768px;
     padding: 60px 90px;
+  }
+  @include desktop {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
   }
   &__block {
     display: flex;
@@ -15,6 +23,10 @@
     text-align: center;
     @include tablet {
       // display: flex;
+    }
+    @include desktop {
+      width: 1200px;
+      margin: 0 auto;
     }
   }
   &__top {
