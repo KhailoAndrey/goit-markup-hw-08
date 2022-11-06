@@ -558,6 +558,11 @@ button:hover, button:focus {
   margin-right: auto;
   padding: 60px 15px;
 }
+@media screen and (min-width: 768px) {
+  .our-command {
+    width: 768px;
+  }
+}
 .our-command__title {
   text-align: center;
   font-weight: 700;
@@ -575,9 +580,27 @@ button:hover, button:focus {
   gap: 30px;
   margin-top: 30px;
 }
+@media screen and (min-width: 768px) {
+  .our-command__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .our-command__card {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .our-command__card {
+    padding-bottom: 24px;
+  }
 }
 .our-command__item {
   display: block;
@@ -585,6 +608,12 @@ button:hover, button:focus {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .our-command__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .our-command__person {
   text-align: center;
