@@ -974,6 +974,11 @@ button:hover, button:focus {
     height: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .cards__link {
+    height: 100%;
+  }
+}
 .cards__link:hover, .cards__link:focus {
   display: -webkit-box;
   display: -ms-flexbox;

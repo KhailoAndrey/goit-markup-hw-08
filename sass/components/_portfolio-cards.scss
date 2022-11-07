@@ -41,6 +41,9 @@
       // width: 100%;
       // flex-basis: calc((100% - 30px) / 2);
     }
+    @include desktop {
+      height: 100%;
+    }
 
     &:hover,
     &:focus {
