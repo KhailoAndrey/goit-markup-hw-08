@@ -18,7 +18,10 @@
     flex-basis: calc((100% - 30px) / 2);
   }
   @include desktop {
-    width: 1200px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2 * 30px) / 3);
   }
   &__link {
     box-shadow: none;
@@ -33,6 +36,7 @@
       // padding: 60px 15px;
     }
     @include tablet {
+      height: 100%;
       // display: flex;
       // width: 100%;
       // flex-basis: calc((100% - 30px) / 2);
@@ -40,7 +44,7 @@
 
     &:hover,
     &:focus {
-      display: block;
+      display: flex;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       @include mobile {
@@ -52,12 +56,14 @@
     }
   }
   &__box-overlay {
-    width: 100%;
+    // width: 100%;
     // width: 370;
-    height: 294px;
+    // height: 100%;
     position: relative;
     overflow: hidden;
-    // background-size: contain;
+    @include desktop {
+      height: 100%;
+    }
   }
   &__overlay {
     position: absolute;
@@ -92,10 +98,13 @@
     border-top: 0px;
     flex-grow: 1;
     @include tablet {
+      width: 354px;
       flex-grow: 1;
     }
+    @include desktop {
+      width: 100%;
+    }
   }
-  
 
   &__tittle {
     font-weight: 700;

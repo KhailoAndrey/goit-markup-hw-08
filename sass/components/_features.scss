@@ -31,14 +31,22 @@
     @include desktop {
       flex-wrap: nowrap;
       gap: 30px;
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
   }
   &__items:not(:last-child) {
     margin-bottom: 30px;
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
   &__items {
     @include tablet {
       flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      margin-bottom: 0;
     }
   }
 

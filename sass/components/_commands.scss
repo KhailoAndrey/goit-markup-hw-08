@@ -9,6 +9,8 @@
   }
   @include desktop {
     width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   &__title {
     text-align: center;
