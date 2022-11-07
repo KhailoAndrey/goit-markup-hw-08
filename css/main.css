@@ -44,17 +44,28 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   position: relative;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 15px;
 }
 
 a {
@@ -829,33 +840,88 @@ button:hover, button:focus {
   fill: currentColor;
 }
 
+.section {
+  width: 480px;
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+  }
+}
 .section__filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 480px) {
+  .section__filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__filters {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    width: 575px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 .section__filter-button {
   padding: 6px 22px;
 }
-.section__filter {
-  margin-right: 8px;
-}
-.section__filter:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .section__filter {
+    margin-right: 8px;
+  }
+  .section__filter:last-child {
+    margin-right: 0;
+  }
 }
 
 .cards {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 30px;
-  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    width: 1200px;
+  }
 }
 .cards__link {
   -webkit-box-shadow: none;
@@ -864,15 +930,34 @@ button:hover, button:focus {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .cards__link {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .cards__link:hover, .cards__link:focus {
   display: block;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 480px) {
+  .cards__link:hover, .cards__link:focus {
+    width: 100%;
+  }
+}
 .cards__box-overlay {
-  width: 370;
-  height: 294;
+  width: 100%;
+  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -880,7 +965,6 @@ button:hover, button:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background: #2196f3;
   opacity: 0.9;
@@ -910,6 +994,16 @@ button:hover, button:focus {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: 0px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
+  .cards__description {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 .cards__tittle {
   font-weight: 700;
