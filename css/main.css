@@ -1052,12 +1052,6 @@ button:hover, button:focus {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1200px) {
-  .cards__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
-  }
-}
 .cards__link {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1104,12 +1098,13 @@ button:hover, button:focus {
 }
 .cards__box-overlay {
   width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .cards__box-overlay {
-    height: 100%;
+    height: auto;
   }
 }
 .cards__overlay {
@@ -1225,6 +1220,9 @@ button:hover, button:focus {
 }
 @media screen and (min-width: 1200px) {
   .footer__block {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 1200px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

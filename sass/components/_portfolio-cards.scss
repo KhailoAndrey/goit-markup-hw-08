@@ -24,12 +24,12 @@
     flex-wrap: wrap;
     // flex-basis: calc((100% - 2 * 30px) / 3);
   }
-  &__item {
-    @include desktop {
-          flex-basis: calc((100% - 2 * 30px) / 3);
+  // &__item {
+  //   @include desktop {
+  //         flex-basis: calc((100% - 2 * 30px) / 3);
 
-    }
-  }
+  //   }
+  // }
   &__link {
     box-shadow: none;
     transition: box-shadow $transition-duration $timing-function;
@@ -68,11 +68,11 @@
   &__box-overlay {
     width: 100%;
     // width: 370;
-    // height: 100%;
+    height: auto;
     position: relative;
     overflow: hidden;
     @include desktop {
-      height: 100%;
+      height: auto;
     }
   }
   &__overlay {

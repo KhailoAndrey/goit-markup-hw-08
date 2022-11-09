@@ -36,6 +36,7 @@
       // display: flex;
     }
     @include desktop {
+      align-items: baseline;
       width: 1200px;
       flex-direction: row;
       margin: 0 auto;
