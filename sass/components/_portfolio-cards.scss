@@ -1,5 +1,5 @@
 .cards {
-  // width: 100%;
+  width: 100%;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
@@ -14,15 +14,15 @@
   // position: relative;
   @include tablet {
     width: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
-    // flex-basis: calc((100% - 30px) / 2);
+    flex-direction: row;
+    flex-basis: calc((100% - 30px) / 2);
   }
   @include desktop {
     width: 100%;
-    // flex-direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
-    // flex-basis: calc((100% - 2 * 30px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
   }
   // &__item {
   //   @include desktop {
@@ -66,6 +66,7 @@
     }
   }
   &__box-overlay {
+    display: block;
     width: 100%;
     // width: 370;
     height: auto;
