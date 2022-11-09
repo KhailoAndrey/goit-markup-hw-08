@@ -24,12 +24,12 @@
     flex-wrap: wrap;
     // flex-basis: calc((100% - 2 * 30px) / 3);
   }
-  // &__item {
-  //   @include desktop {
-  //         flex-basis: calc((100% - 2 * 30px) / 3);
+  &__item {
+    @include desktop {
+          flex-basis: calc((100% - 2 * 30px) / 3);
 
-  //   }
-  // }
+    }
+  }
   &__link {
     box-shadow: none;
     transition: box-shadow $transition-duration $timing-function;
