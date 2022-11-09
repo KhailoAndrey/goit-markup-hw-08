@@ -1,508 +1,703 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфоліо</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/main.min.css" />
-  <title>Портфоліо</title>
-</head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <!-- Navigation box -->
+      <div class="site-header__container">
+        <nav class="site-header__navigation">
+          <a href="./index.html" class="site-logo"
+            >Web<span lang="en" class="site-header__text">Studio</span></a
+          >
 
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <!-- Navigation box -->
-    <div class="site-header__container">
-      <nav class="site-header__navigation">
-        <a href="./index.html" class="site-logo">Web<span lang="en" class="site-header__text">Studio</span></a>
-
-        <ul class="site-header__pages">
-          <li class="site-header__page">
-            <a href="./index.html" class="site-header__link">Студія</a>
+          <ul class="site-header__pages">
+            <li class="site-header__page">
+              <a href="./index.html" class="site-header__link">Студія</a>
+            </li>
+            <li class="site-header__page">
+              <a
+                href="./portfolio.html"
+                class="site-header__link site-header__link--active"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-header__page">
+              <a href="#" class="site-header__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contacts box -->
+        <ul class="site-header__contacts">
+          <li class="site-header__contact">
+            <a
+              href="mailto:info@devstudio.com"
+              class="site-header__contact-link"
+            >
+              <svg width="16px" height="12px" class="site-header__icon-mail">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="site-header__page">
-            <a href="./portfolio.html" class="site-header__link site-header__link--active">Портфоліо</a>
-          </li>
-          <li class="site-header__page">
-            <a href="#" class="site-header__link">Контакти</a>
+          <li class="site-header__contact">
+            <a href="tel:+380961111111" class="site-header__contact-link">
+              <svg width="10px" height="16px" class="site-header__icon-tel">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <!-- Contacts box -->
-      <ul class="site-header__contacts">
-        <li class="site-header__contact">
-          <a href="mailto:info@devstudio.com" class="site-header__contact-link">
-            <svg width="16px" height="12px" class="site-header__icon-mail">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="site-header__contact">
-          <a href="tel:+380961111111" class="site-header__contact-link">
-            <svg width="10px" height="16px" class="site-header__icon-tel">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
-      <button type="button" class="site-header__menu" data-menu-open>
-        <svg width="40px" height="40px">
-          <use href="./images/symbol-defs.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div class="mob-menu is-hidden" data-menu>
-      <button type="button" class="menu-close-btn" data-menu-close>
-        <svg width="40" height="40">
-          <use href="./images/symbol-defs.svg#icon-close_menu_btn"></use>
-        </svg>
-      </button>
-      <div class="mob-menu__container">
-        <div class="mob-menu__top">
-          <ul class="mob-menu__pages">
-            <li class="mob-menu__page">
-              <a href="./index.html" class="mob-menu__link">Студія</a>
-            </li>
-            <li class="mob-menu__page">
-              <a href="./portfolio.html" class="mob-menu__link  mob-menu__link--active">Портфоліо</a>
-            </li>
-            <li class="mob-menu__page">
-              <a href="#" class="mob-menu__link">Контакти</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="mob-menu__bottom">
-          <ul class="mob-menu__contacts">
-            <li class="mob-menu__contact">
-              <a href="tel:+380961111111" class="mob-menu__tel">+38 096 111 11 11</a>
-            </li>
-            <li class="mob-menu__contact">
-              <a href="mailto:info@devstudio.com" class="mob-menu__mail">info@devstudio.com</a>
-            </li>
-          </ul>
-
-          <ul class="mob-menu-soc-list">
-            <li class="mob-menu-soc-list__item">
-              <a href="" class="mob-menu-soc-list__link">Instagram </a>
-            </li>
-            <li class="mob-menu-soc-list__item">
-              <a href="" class="mob-menu-soc-list__link">Twitter </a>
-            </li>
-            <li class="mob-menu-soc-list__item">
-              <a href="" class="mob-menu-soc-list__link">Facebook </a>
-            </li>
-            <li class="mob-menu-soc-list__item">
-              <a href="" class="mob-menu-soc-list__link">Linkedin </a>
-            </li>
-          </ul>
-        </div>
-
-
+        <button type="button" class="site-header__menu" data-menu-open>
+          <svg width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-  </header>
-  <!-- Main content -->
-  <main>
-    <!-- main section -->
-    <section class="section">
-      <div>
-        <h1 class="visually-hidden">Наші проекти</h1>
-        <!-- Buttons -->
-        <ul class="section__filters">
-          <li class="section__filter">
-            <button type="button" class="section__filter-button">Усі</button>
-          </li>
-          <li class="section__filter">
-            <button type="button" class="section__filter-button">Веб-сайти</button>
-          </li>
-          <li class="section__filter">
-            <button type="button" class="section__filter-button">Додатки</button>
-          </li>
-          <li class="section__filter">
-            <button type="button" class="section__filter-button">Дизайн</button>
-          </li>
-          <li class="section__filter">
-            <button type="button" class="section__filter-button">Маркетинг</button>
-          </li>
-        </ul>
-        <!-- Картки -->
-        <ul class="cards">
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-1@1x-min.jpg 1x,
-                    ./images/pf-mob-1@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-1@1x-min.jpg 1x,
-                    ./images/pf-tab-1@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-1-min.jpg 1x,
-                    ./images/img-pf-desktop-1@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-1@1x-min.jpg" alt="Сайт з Портфоліо" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Технокряк</h3>
-                <p class="cards__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-2@1x-min.jpg 1x,
-                    ./images/pf-mob-2@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-2@1x-min.jpg 1x,
-                    ./images/pf-tab-2@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-2-min.jpg 1x,
-                    ./images/img-pf-desktop-2@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-2@1x-min.jpg" alt="Зображення баскетболістів" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">
-                  Постер New Orlean vs Golden Star
-                </h3>
-                <p class="cards__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-3@1x-min.jpg 1x,
-                    ./images/pf-mob-3@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-3@1x-min.jpg 1x,
-                    ./images/pf-tab-3@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-3-min.jpg 1x,
-                    ./images/img-pf-desktop-3@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450"/>
-              <img src="./images/pf-mob-3@1x-min.jpg" alt="Емблема ресторану" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Ресторан Seafood</h3>
-                <p class="cards__text">Додаток</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-4@1x-min.jpg 1x,
-                    ./images/pf-mob-4@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-4@1x-min.jpg 1x,
-                    ./images/pf-tab-4@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-4-min.jpg 1x,
-                    ./images/img-pf-desktop-4@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-4@1x-min.jpg" alt="Навушники" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Проєкт Prime</h3>
-                <p class="cards__text">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-5@1x-min.jpg 1x,
-                    ./images/pf-mob-5@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-5@1x-min.jpg 1x,
-                    ./images/pf-tab-5@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-5-min.jpg 1x,
-                    ./images/img-pf-desktop-5@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-5@1x-min.jpg" alt="Коробки" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Проєкт Boxes</h3>
-                <p class="cards__text">Додаток</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-6@1x-min.jpg 1x,
-                    ./images/pf-mob-6@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-6@1x-min.jpg 1x,
-                    ./images/pf-tab-6@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-6-min.jpg 1x,
-                    ./images/img-pf-desktop-6@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-6@1x-min.jpg" alt="Зображення Веб-сайту" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Inspiration has no Borders</h3>
-                <p class="cards__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-7@1x-min.jpg 1x,
-                    ./images/pf-mob-7@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-7@1x-min.jpg 1x,
-                    ./images/pf-tab-7@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-7-min.jpg 1x,
-                    ./images/img-pf-desktop-7@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-7@1x-min.jpg" alt="Відкрита книга" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Видання Limited Edition</h3>
-                <p class="cards__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-8@1x-min.jpg 1x,
-                    ./images/pf-mob-8@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-8@1x-min.jpg 1x,
-                    ./images/pf-tab-8@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-8-min.jpg 1x,
-                    ./images/img-pf-desktop-8@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-8@1x-min.jpg" alt="Ярлик з надписом" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Проєкт LAB</h3>
-                <p class="cards__text">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="cards__link">
-              <div class="cards__box-overlay">
-                <picture>
-              <source srcset="
-                    ./images/pf-mob-9@1x-min.jpg 1x,
-                    ./images/pf-mob-9@2x-min.jpg 2x
-                  " media="(min-width: 1200px)" width="370"/>
-              <source srcset="
-                    ./images/pf-tab-9@1x-min.jpg 1x,
-                    ./images/pf-tab-9@2x-min.jpg 2x
-                  " media="(min-width: 768px)" width="354"/>
-              <source srcset="
-                    ./images/img-pf-desktop-9-min.jpg 1x,
-                    ./images/img-pf-desktop-9@2x-min.jpg 2x
-                  " media="(max-width: 767px)" width="450" />
-              <img src="./images/pf-mob-9@1x-min.jpg" alt="Відкритий ноутбук" width="450"/>
-            </picture>
-                <div class="cards__overlay">
-                  <p class="cards__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.
-                    Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-              <div class="cards__description">
-                <h3 class="cards__tittle">Growing Business</h3>
-                <p class="cards__text">Додаток</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__block">
-      <div class="footer__top">
-        <div class="footer__contacts">
-          <a href="./index.html" class="site-logo">Web<span class="site-logo--inverse">Studio</span></a>
-          <address class="footer__address">
-            <ul>
-              <li class="footer__item">
-                <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer__link" target="_blank"
-                  rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Украінки, 26</a>
+      <!-- Mobile menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close_menu_btn"></use>
+          </svg>
+        </button>
+        <div class="mob-menu__container">
+          <div class="mob-menu__top">
+            <ul class="mob-menu__pages">
+              <li class="mob-menu__page">
+                <a href="./index.html" class="mob-menu__link">Студія</a>
               </li>
-              <li class="footer__item">
-                <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+              <li class="mob-menu__page">
+                <a
+                  href="./portfolio.html"
+                  class="mob-menu__link mob-menu__link--active"
+                  >Портфоліо</a
+                >
               </li>
-              <li class="footer__item">
-                <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+              <li class="mob-menu__page">
+                <a href="#" class="mob-menu__link">Контакти</a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__social-block">
-          <p class="footer__social-tittle">приєднуйтесь</p>
-          <div>
-            <ul class="social-list footer__social-list">
-              <li class="social-list__item footer__social-item">
-                <a href="" class="social-list__link">
-                  <svg class="footer__icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu__contacts">
+              <li class="mob-menu__contact">
+                <a href="tel:+380961111111" class="mob-menu__tel"
+                  >+38 096 111 11 11</a
+                >
               </li>
-              <li class="social-list__item footer__social-item">
-                <a href="" class="social-list__link">
-                  <svg class="footer__icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <li class="mob-menu__contact">
+                <a href="mailto:info@devstudio.com" class="mob-menu__mail"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="social-list__item footer__social-item">
-                <a href="" class="social-list__link">
-                  <svg class="footer__icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
+            </ul>
+            <ul class="mob-menu-soc-list">
+              <li class="mob-menu-soc-list__item">
+                <a href="" class="mob-menu-soc-list__link">Instagram </a>
               </li>
-              <li class="social-list__item footer__social-item">
-                <a href="" class="social-list__link">
-                  <svg class="footer__icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <li class="mob-menu-soc-list__item">
+                <a href="" class="mob-menu-soc-list__link">Twitter </a>
+              </li>
+              <li class="mob-menu-soc-list__item">
+                <a href="" class="mob-menu-soc-list__link">Facebook </a>
+              </li>
+              <li class="mob-menu-soc-list__item">
+                <a href="" class="mob-menu-soc-list__link">Linkedin </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__subscription">
-        <p class="footer__subscription-tittle">підпишіться на розсилку</p>
-        <form class="footer__subscription-form">
-          <label class="footer__subscription-label">
-            <input type="email" name="email" placeholder="E-mail" class="footer__input-email" />
-          </label>
-          <button type="submit" class="footer__send-btn">
-            Підписатися
-            <svg class="footer__icon-send" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+    </header>
+    <!-- Main content -->
+    <main>
+      <!-- main section -->
+      <section class="section">
+        <div class="section__container">
+          <h1 class="visually-hidden">Наші проекти</h1>
+          <!-- Buttons -->
+          <ul class="section__filters">
+            <li class="section__filter">
+              <button type="button" class="section__filter-button">Усі</button>
+            </li>
+            <li class="section__filter">
+              <button type="button" class="section__filter-button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="section__filter">
+              <button type="button" class="section__filter-button">
+                Додатки
+              </button>
+            </li>
+            <li class="section__filter">
+              <button type="button" class="section__filter-button">
+                Дизайн
+              </button>
+            </li>
+            <li class="section__filter">
+              <button type="button" class="section__filter-button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <!-- Картки -->
+          <ul class="cards">
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-1-min.jpg 1x,
+                        ./images/pf-mob-1@2x-min.jpg      2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-1@1x-min.jpg 1x,
+                        ./images/pf-tab-1@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-mob-1@1x-min.jpg         1x,
+                        ./images/img-pf-desktop-1@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-1@1x-min.jpg"
+                      alt="Сайт з Портфоліо"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Технокряк</h3>
+                  <p class="cards__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-2@1x-min.jpg 1x,
+                        ./images/pf-mob-2@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-2@1x-min.jpg 1x,
+                        ./images/pf-tab-2@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-2-min.jpg    1x,
+                        ./images/img-pf-desktop-2@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-2@1x-min.jpg"
+                      alt="Зображення баскетболістів"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="cards__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-3@1x-min.jpg 1x,
+                        ./images/pf-mob-3@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-3@1x-min.jpg 1x,
+                        ./images/pf-tab-3@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-3-min.jpg    1x,
+                        ./images/img-pf-desktop-3@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-3@1x-min.jpg"
+                      alt="Емблема ресторану"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Ресторан Seafood</h3>
+                  <p class="cards__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-4@1x-min.jpg 1x,
+                        ./images/pf-mob-4@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-4@1x-min.jpg 1x,
+                        ./images/pf-tab-4@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-4-min.jpg    1x,
+                        ./images/img-pf-desktop-4@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-4@1x-min.jpg"
+                      alt="Навушники"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Проєкт Prime</h3>
+                  <p class="cards__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-5@1x-min.jpg 1x,
+                        ./images/pf-mob-5@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-5@1x-min.jpg 1x,
+                        ./images/pf-tab-5@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-5-min.jpg    1x,
+                        ./images/img-pf-desktop-5@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-5@1x-min.jpg"
+                      alt="Коробки"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Проєкт Boxes</h3>
+                  <p class="cards__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-6@1x-min.jpg 1x,
+                        ./images/pf-mob-6@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-6@1x-min.jpg 1x,
+                        ./images/pf-tab-6@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-6-min.jpg    1x,
+                        ./images/img-pf-desktop-6@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-6@1x-min.jpg"
+                      alt="Зображення Веб-сайту"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Inspiration has no Borders</h3>
+                  <p class="cards__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-7@1x-min.jpg 1x,
+                        ./images/pf-mob-7@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-7@1x-min.jpg 1x,
+                        ./images/pf-tab-7@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-7-min.jpg    1x,
+                        ./images/img-pf-desktop-7@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-7@1x-min.jpg"
+                      alt="Відкрита книга"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Видання Limited Edition</h3>
+                  <p class="cards__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-8@1x-min.jpg 1x,
+                        ./images/pf-mob-8@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-8@1x-min.jpg 1x,
+                        ./images/pf-tab-8@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-8-min.jpg    1x,
+                        ./images/img-pf-desktop-8@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-8@1x-min.jpg"
+                      alt="Ярлик з надписом"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Проєкт LAB</h3>
+                  <p class="cards__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cards__link">
+                <div class="cards__box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf-mob-9@1x-min.jpg 1x,
+                        ./images/pf-mob-9@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="370"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf-tab-9@1x-min.jpg 1x,
+                        ./images/pf-tab-9@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      width="354"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-pf-desktop-9-min.jpg    1x,
+                        ./images/img-pf-desktop-9@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      width="450"
+                    />
+                    <img
+                      src="./images/pf-mob-9@1x-min.jpg"
+                      alt="Відкритий ноутбук"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cards__overlay">
+                    <p class="cards__overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__description">
+                  <h3 class="cards__tittle">Growing Business</h3>
+                  <p class="cards__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__block">
+        <div class="footer__top">
+          <div class="footer__contacts">
+            <a href="./index.html" class="site-logo"
+              >Web<span class="site-logo--inverse">Studio</span></a
+            >
+            <address class="footer__address">
+              <ul>
+                <li class="footer__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    class="footer__link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Украінки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="footer__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social-block">
+            <p class="footer__social-tittle">приєднуйтесь</p>
+            <div>
+              <ul class="social-list footer__social-list">
+                <li class="social-list__item footer__social-item">
+                  <a href="" class="social-list__link">
+                    <svg class="footer__icon" width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item footer__social-item">
+                  <a href="" class="social-list__link">
+                    <svg class="footer__icon" width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item footer__social-item">
+                  <a href="" class="social-list__link">
+                    <svg class="footer__icon" width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item footer__social-item">
+                  <a href="" class="social-list__link">
+                    <svg class="footer__icon" width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__subscription">
+          <p class="footer__subscription-tittle">підпишіться на розсилку</p>
+          <form class="footer__subscription-form">
+            <label class="footer__subscription-label">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer__input-email"
+              />
+            </label>
+            <button type="submit" class="footer__send-btn">
+              Підписатися
+              <svg class="footer__icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <script src="./js/menu.js"></script>
-
-</body>
-
+  </body>
 </html>

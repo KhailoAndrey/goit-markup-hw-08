@@ -1,43 +1,61 @@
 .section {
-  width: 480px;
-  padding: 60px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  @include tablet {
-    width: 768px;
-  }
-  @include desktop {
-    width: 1200px;
+  width: 100%;
+  padding: 60px 0;
+  margin: 0 auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  // @include tablet {
+  //   width: 768px;
+  // }
+  // @include desktop {
+  //   width: 1200px;
+  // }
+  &__container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include tablet {
+      width: 768px;
+      padding: 0 15px;
+    }
+    @include desktop {
+      width: 1200px;
+      padding: 0 15px;
+    }
   }
   &__filters {
-    // display: flex;
-    // margin: 0 auto 50px;
     margin-bottom: 40px;
-    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     @include mobile {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      width: 326px;
+      // width: 326px;
     }
     @include tablet {
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 14px;
+      margin-bottom: 30px;
       width: 575px;
       flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
   &__filter-button {
+    font-weight: 500;
+    font-size: $middle-text;
+    line-height: 1.6;
     padding: 6px 22px;
   }
-  &__filter {
-    @include desktop {
-      gap: 8px;
-      // margin-right: 8px;
-      // &:last-child {
-      //   margin-right: 0;
-      // }
-    }
-  }
+  // &__filter {
+  //   @include desktop {
+  //     gap: 8px;
+  //     // margin-right: 8px;
+  //     // &:last-child {
+  //     //   margin-right: 0;
+  //     // }
+  //   }
+  // }
 }

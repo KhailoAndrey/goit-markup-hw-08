@@ -4,11 +4,14 @@
   margin-right: auto;
   padding: 60px 15px;
   @include mobile {
-    width: 480px;
+    padding: 60px 0;
+    // width: 480px;
   }
   @include tablet {
-    width: 768px;
-    padding: 60px 90px;
+    // width: 768px;
+    padding-top: 54px;
+    padding-bottom: 66px;
+    // padding: 60px 0;
   }
   @include desktop {
     // width: 1600px;
@@ -18,11 +21,18 @@
     padding: 60px 0;
   }
   &__block {
+    // width: 480px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     // align-items: baseline;
     text-align: center;
     @include tablet {
+      width: 768px;
+      padding: 0 15px;
+
       // display: flex;
     }
     @include desktop {
@@ -36,11 +46,13 @@
   &__top {
     @include tablet {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-bottom: 60px;
+      align-items: baseline;
     }
     @include desktop {
       margin-bottom: 0;
+      align-items: baseline;
     }
   }
   &__contacts {
@@ -48,14 +60,26 @@
     @include desktop {
       text-align: left;
     }
+    > .site-logo {
+      @include tablet {
+        padding: 0;
+        padding-bottom: 20px;
+      }
+    }
   }
   &__address {
     margin-top: 20px;
     font-weight: 400;
     font-size: $small-text;
     line-height: 1.7;
+    @include tablet {
+      // margin: 0;
+    }
   }
   &__item:not(:last-child) {
+    @include tablet {
+      margin-bottom: 8px;
+    }
     margin-bottom: 9px;
   }
   &__social-tittle {
@@ -76,9 +100,10 @@
     // margin-left: 70px;
     @include tablet {
       margin: 0;
-      margin-top: 8px;
+      // margin-top: 8px;
     }
     @include desktop {
+      align-items: baseline;
       margin-left: 70px;
     }
   }
@@ -95,21 +120,34 @@
   }
   &__subscription {
     @include desktop {
+      // align-items: baseline;
       width: 570px;
     }
     //   display: block;
     //   margin-left: auto;
   }
   &__subscription-tittle {
-    // margin-bottom: 20px;
     text-transform: uppercase;
     color: $white-color;
     font-style: normal;
     font-weight: 700;
     font-size: $small-text;
     line-height: 1.14;
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
     @include desktop {
       text-align: left;
+    }
+  }
+  &__subscription-label {
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include desktop {
+      margin: 0;
     }
   }
   &__subscription-form {
@@ -118,7 +156,11 @@
     align-items: center;
     // justify-content: space-between;
     // gap: 12px;
+    // @include tablet {
+    //   margin: 20px 0;
+    // }
     @include desktop {
+      margin-top: 20px;
       flex-direction: row;
     }
   }
@@ -154,9 +196,9 @@
 }
 
 .footer__input-email {
-  margin: 20px 0;
+  // margin-top: 20px;
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -185,7 +227,7 @@
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  padding: 0;
+  padding: 10px 28px;
   // margin-left: auto;
   color: $white-color;
   background-color: $blue-text;

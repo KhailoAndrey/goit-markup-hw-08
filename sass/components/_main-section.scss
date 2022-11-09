@@ -6,12 +6,12 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 118px 60px;
+  padding: 118px 0;
   justify-content: center;
   display: flex;
   height: auto;
   background-image: $bg-gradient, url(../images/hero-mob@1x.jpg);
-  min-width: 480px;
+  width: 100%;
   max-width: 767px;
   @include retina {
     background-image: $bg-gradient, url(../images/hero-mob@2x.jpg);
@@ -26,9 +26,10 @@
     }
   }
   @include desktop {
+    padding: 200px 0;
     background-image: $bg-gradient, url(../images/hero-desktop@1x.jpg);
     min-width: 1200px;
-    max-width: 100%;
+    max-width: 1600px;
     @include retina {
       background-image: $bg-gradient, url(../images/hero-desktop@2x.jpg);
     }
@@ -43,6 +44,9 @@
     margin: 0;
     text-align: center;
   }
+  @include desktop {
+    width: 696px;
+  }
 }
 
 .section-title__text {
@@ -55,6 +59,10 @@
   text-transform: uppercase;
   color: $white-color;
   margin-bottom: 30px;
+  @include desktop {
+    font-size: $h1-text;
+    line-height: 1.36;
+  }
 }
 
 .section-title__button {
@@ -71,9 +79,9 @@
   border-color: $blue-text;
   padding: 10px 24px;
   position: relative;
-  // transition: background-color $transition-duration $timing-function;
-  // &:hover,
-  // &:focus {
-  //   background-color: $button-hover-color;
-  // }
+  transition: background-color $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
 }
