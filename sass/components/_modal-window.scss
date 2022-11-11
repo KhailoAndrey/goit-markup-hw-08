@@ -39,7 +39,6 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 450px;
-  // height: 610px;
   background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -47,6 +46,12 @@
   transition: transform $transition-duration $timing-function,
     opacity $transition-duration $timing-function;
   padding: 40px;
+  @media screen and (min-width: 280px) and (max-width: 450px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 280px) {
+    width: 280px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -66,7 +71,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  // margin-bottom: 20px;
 }
 
 .modal__input {
@@ -130,7 +134,6 @@
 
 .modal__license {
   display: flex;
-  // justify-content: center;
   align-items: baseline;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -140,7 +143,6 @@
 .modal__icon-checkbox {
   display: block;
   position: absolute;
-  // left: 25px;
   cursor: pointer;
   border: 2px solid $title-color;
   fill: $white-color;

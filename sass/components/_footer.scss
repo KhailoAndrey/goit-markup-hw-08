@@ -5,35 +5,27 @@
   padding: 60px 15px;
   @include mobile {
     padding: 60px 0;
-    // width: 480px;
   }
   @include tablet {
-    // width: 768px;
     padding-top: 54px;
     padding-bottom: 66px;
-    // padding: 60px 0;
   }
   @include desktop {
-    // width: 1600px;
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
     padding: 60px 0;
   }
   &__block {
-    // width: 480px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    // align-items: baseline;
     text-align: center;
     @include tablet {
       width: 768px;
       padding: 0 15px;
-
-      // display: flex;
     }
     @include desktop {
       align-items: baseline;
@@ -74,7 +66,6 @@
     font-size: $small-text;
     line-height: 1.7;
     @include tablet {
-      // margin: 0;
     }
   }
   &__item:not(:last-child) {
@@ -98,10 +89,8 @@
   &__social-block {
     display: block;
     margin: 60px 0;
-    // margin-left: 70px;
     @include tablet {
       margin: 0;
-      // margin-top: 8px;
     }
     @include desktop {
       align-items: baseline;
@@ -121,11 +110,8 @@
   }
   &__subscription {
     @include desktop {
-      // align-items: baseline;
       width: 570px;
     }
-    //   display: block;
-    //   margin-left: auto;
   }
   &__subscription-tittle {
     text-transform: uppercase;
@@ -155,19 +141,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: space-between;
-    // gap: 12px;
-    // @include tablet {
-    //   margin: 20px 0;
-    // }
     @include desktop {
       margin-top: 20px;
       flex-direction: row;
     }
   }
-  // &__subscription-form {
-  //   width: 100%;
-  // }
   &__icon-send {
     fill: currentColor;
     margin-left: 10px;
@@ -197,7 +175,6 @@
 }
 
 .footer__input-email {
-  // margin-top: 20px;
   padding-left: 16px;
   width: 100%;
   height: 50px;
@@ -229,7 +206,6 @@
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  // margin-left: auto;
   color: $white-color;
   background-color: $blue-text;
   transition: background-color $transition-duration $timing-function;

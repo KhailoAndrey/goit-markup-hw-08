@@ -1,15 +1,6 @@
 .section {
-  // width: 100%;
   padding: 60px 0;
   margin: 0 auto;
-  // margin-left: auto;
-  // margin-right: auto;
-  // @include tablet {
-  //   width: 768px;
-  // }
-  // @include desktop {
-  //   width: 1200px;
-  // }
   &__container {
     width: 100%;
     padding: 0 15px;
@@ -33,7 +24,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      // width: 326px;
     }
     @include tablet {
       margin-left: auto;
@@ -50,13 +40,4 @@
     line-height: 1.6;
     padding: 6px 22px;
   }
-  // &__filter {
-  //   @include desktop {
-  //     gap: 8px;
-  //     // margin-right: 8px;
-  //     // &:last-child {
-  //     //   margin-right: 0;
-  //     // }
-  //   }
-  // }
 }
