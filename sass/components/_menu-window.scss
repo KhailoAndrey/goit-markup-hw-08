@@ -12,6 +12,9 @@
   height: 100vh;
   z-index: 1;
   padding: 48px 40px;
+  @include tablet {
+    display: none;
+  }
 }
 .menu-close-btn {
   display: flex;
